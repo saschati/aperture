@@ -1,0 +1,95 @@
+.btn {
+  --btn-bg-color: var(--color-black);
+  --btn-color: var(--color-white);
+
+  --btn-anim-speed: 0.3s;
+
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
+
+  height: 42px;
+  padding: 9px 20px 13px;
+  border-radius: 4px;
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  //text-transform: uppercase;
+  white-space: nowrap;
+  font-size: var(--text-size-no);
+
+  cursor: pointer;
+  transition: var(--btn-anim-speed);
+
+  // TYPES
+  &_type {
+    &_with-circle {
+      position: relative;
+      padding-left: 42px;
+      padding-right: 12px;
+
+      &::before {
+        content: "";
+
+        top: calc(50% - 16px);
+        left: 4px;
+
+        position: absolute;
+        width: 32px;
+        height: 32px;
+
+        border-radius: 45%;
+        background-color: var(--btn-color);
+        transition: all var(--btn-anim-speed);
+      }
+
+      &:hover {
+        &::before {
+          background-color: var(--btn-bg-color);
+        }
+      }
+    }
+  }
+
+  // COLOR
+  &_color {
+    &_black {
+      --btn-bg-color: var(--color-black);
+      --btn-color: var(--color-white);
+    }
+    &_white {
+      --btn-bg-color: var(--color-white);
+      --btn-color: var(--color-black);
+    }
+    &_soft-black {
+      --btn-bg-color: var(--color-soft-black);
+      --btn-color: var(--color-white);
+    }
+    &_gay {
+      --btn-bg-color: var(--color-gay);
+      --btn-color: var(--color-black);
+    }
+    &_white-gray {
+      --btn-bg-color: var(--color-white-gray);
+      --btn-color: var(--color-black);
+    }
+  }
+
+  // BORDER ROUND
+  &_round {
+    &_s1 {
+      border-radius: 11px;
+    }
+    &_x1 {
+      border-radius: 12px;
+    }
+    &_x2 {
+      border-radius: 14px;
+    }
+  }
+
+  &:hover {
+    color: var(--btn-bg-color);
+    background-color: var(--btn-color);
+    box-shadow: 0 0 0 1pt var(--btn-bg-color);
+  }
+}

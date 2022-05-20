@@ -1,0 +1,23 @@
+.homepage {
+  grid-template:
+      ".    header               ." 90px
+      ".    banner               ." 716px
+      ".    what_we_do           ." auto
+      ".    locality             ." 600px
+      ".    gear_cage            ." auto
+      ".    monstera_leafs       ." 600px
+      ".    past_clients         ." 500px
+      ".    star_fall            ." 600px
+      ".    need_help            ." 414px
+      ".    footer               ." 652px
+  /    auto minmax(auto, 1440px) auto;
+
+  background-color: var(--color-white);
+  color: var(--color-white);
+  line-height: var(--line-height);
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--text-size-base);
+}

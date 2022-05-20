@@ -1,0 +1,45 @@
+.gear-cage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(720px, 1fr));
+  grid-auto-rows: 540px;
+
+  &__banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-image: url("../../../img/banner-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__icons {
+    height: 12px;
+    margin-right: 40px;
+    margin-bottom: 39px;
+  }
+
+  &__container {
+    padding-left: 100px;
+    padding-top: 173px;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    margin-bottom: 14px;
+
+    font-size: var(--text-size-nl);
+    line-height: calc(var(--line-height) + 12px);
+  }
+
+  &__description {
+    width: 515px;
+    margin-bottom: 20px;
+
+    font-size: var(--text-size-sm);
+  }
+}

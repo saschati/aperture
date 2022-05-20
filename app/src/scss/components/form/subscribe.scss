@@ -1,0 +1,17 @@
+.subscribe {
+  position: relative;
+
+  &__input {
+    padding-right: 75px;
+  }
+
+  &__btn {
+    position: absolute;
+
+    top: calc(50% - 15px);
+    right: 6px;
+
+    width: 63px;
+    height: 30px;
+  }
+}

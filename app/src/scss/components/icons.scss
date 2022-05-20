@@ -1,0 +1,21 @@
+.icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    &__item {
+        & + & {
+            margin-left: 16px;
+        }
+    }
+
+    &__icon {
+        height: 16px;
+        margin-bottom: -6px;
+    }
+
+    &__text {
+        font-size: var(--text-size-es);
+        line-height: calc(var(--line-height) - 8px);
+    }
+}

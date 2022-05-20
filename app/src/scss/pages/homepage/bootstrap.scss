@@ -1,0 +1,27 @@
+@import "../../common/bootstrap";
+// COMPONENTS
+@import "../../components/mixed/text";
+@import "../../components/mixed/flex";
+@import "../../components/mixed/grid";
+@import "../../components/mixed/bg";
+@import "../../components/link";
+@import "../../components/icons";
+@import "../../components/btn";
+@import "../../components/photo-grid";
+@import "../../components/list";
+@import "../../components/social-networks";
+
+// COMPONENT FORMS
+@import "../../components/form/input";
+@import "../../components/form/subscribe";
+
+// BLOCKS
+@import "../../blocks/footer";
+@import "../../blocks/header";
+@import "../../blocks/panorama";
+@import "../../blocks/blackboard";
+
+@import "blocks/banner";
+@import "blocks/what-we-do";
+@import "blocks/gear-cage";
+@import "main";

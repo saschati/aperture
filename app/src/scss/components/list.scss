@@ -1,0 +1,11 @@
+.list {
+  display: block;
+
+  &__item {
+    font-size: var(--text-size-sm);
+
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}

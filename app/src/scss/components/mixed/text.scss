@@ -1,0 +1,15 @@
+.text {
+  --text-color: var(--color-black);
+
+  font-size: var(--text-size-no);
+  font-weight: normal;
+
+  color: var(--text-color);
+
+  &_type_title {
+    font-size: var(--text-size-sm);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-gay);
+  }
+}

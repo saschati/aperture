@@ -1,0 +1,24 @@
+.bg {
+  --bg-color: var(--color-white);
+
+  background-color: var(--bg-color);
+
+  // COLOR
+  &_color {
+    &_black {
+      --bg-color: var(--color-black);
+    }
+    &_white {
+      --bg-color: var(--color-white);
+    }
+    &_white-gray {
+      --bg-color: var(--color-white-gray)
+    }
+    &_soft-black {
+      --bg-color: var(--color-soft-black)
+    }
+    &_gay {
+      --bg-color: var(--color-gay)
+    }
+  }
+}

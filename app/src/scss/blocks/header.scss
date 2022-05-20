@@ -1,0 +1,47 @@
+.header {
+  --header-bg-color: var(--color-soft-black);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  padding: 24px 140px 25px 152px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  background-color: var(--header-bg-color);
+
+  // HEADER ITEMS
+  &__logo {
+    height: 40px;
+    margin-right: auto;
+  }
+
+  &__text {
+    font-size: var(--text-size-sm);
+  }
+
+  &__btn,
+  &__link {
+    font-size: var(--text-size-md);
+  }
+
+  &__logo + &__text {
+    margin-left: 26px;
+  }
+
+  &__text + &__link {
+    margin-left: 56px;
+  }
+
+  &__link + &__link {
+    margin-left: 32px;
+  }
+
+  &__link + &__btn {
+    margin-left: 31px;
+  }
+}

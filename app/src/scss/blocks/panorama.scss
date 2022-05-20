@@ -1,0 +1,28 @@
+.panorama {
+  display: flex;
+  flex-direction: column;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__container {
+    width: 300px;
+    margin: 260px 62px auto auto;
+  }
+
+  &__title {
+     color: var(--color-white);
+  }
+
+  &__description {
+    font-size: var(--text-size-sm);
+    color: var(--color-gay);
+  }
+
+  &__icons {
+    height: 40px;
+    margin-right: 45px;
+    margin-bottom: 39px;
+  }
+}

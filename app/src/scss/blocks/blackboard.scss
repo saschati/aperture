@@ -1,0 +1,44 @@
+.blackboard {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-top: 113px;
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-size: var(--text-size-lg);
+    line-height: calc(var(--line-height) + 22px);
+  }
+
+  &__subtitle {
+    font-size: calc(var(--text-size-nm) + 1px);
+    color: var(--color-gay);
+    line-height: calc(var(--line-height) + 10px);
+  }
+
+  &__btn {
+    margin-top: 22px;
+  }
+
+  &__subtitle,
+  &__title,
+  &__btn {
+    align-self: center;
+  }
+
+  &__subtitle,
+  &__title {
+    width: 570px;
+    text-align: center;
+  }
+
+  &__gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 82px;
+  }
+}

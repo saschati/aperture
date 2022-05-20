@@ -1,0 +1,16 @@
+.input {
+  --input-bg-color: var(--color-white-gray);
+  --input-br-color: var(--color-soft-white);
+  --input-tx-color: var(--color-black);
+
+  padding-inline: 12px;
+
+  width: 100%;
+  height: 52px;
+
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--input-br-color);
+  border-radius: 12px;
+
+  color: var(--input-tx-color);
+}

@@ -1,0 +1,36 @@
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../../../img/banner.png);
+
+  &__info {
+    width: 600px;
+    margin-bottom: 70px;
+
+    &-title {
+      font-size: var(--text-size-sm);
+    }
+
+    &-subtitle {
+      font-size: var(--text-size-el);
+      line-height: calc(var(--line-height) + 39px);
+    }
+
+    &-description {
+      color: var(--color-gay);
+      font-size: var(--text-size-sm);
+      text-align: center;
+
+      width: 580px;
+      margin: 18px auto;
+    }
+  }
+
+  &__icons {
+    width: 410px;
+    margin-bottom: 41px;
+    padding-right: 46px;
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= _.template(require('./../inc/head.html').default)() %>
+</head>
+<body class="homepage grid">
+    <%= _.template(require('./../inc/header.html').default)() %>
+
+    <div class="grid__area banner" style="--grid-area: banner">
+        <div class="banner__info flex flex_type_center_column">
+            <h6 class="banner__info-title text text_type_title">Photographer & Filmmaker</h6>
+            <h1 class="banner__info-subtitle">Aperture Studios</h1>
+            <p class="banner__info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        </div>
+        <div class="banner__icons icons">
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/shutter.svg") %>" alt="Icon">
+                <span class="icons__text">1/2000s</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/aperture.svg") %>" alt="Icon">
+                <span class="icons__text">f/11</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/ios.svg") %>" alt="Icon">
+                <span class="icons__text">100</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/location.svg") %>" alt="Icon">
+                <span class="icons__text">Iceland</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area what-we-do bg bg_color_black" style="--grid-area: what_we_do">
+        <h2 class="what-we-do__title">What we do.</h2>
+        <p class="what-we-do__description">The areas that we're specialized in.</p>
+        <div class="photo-grid">
+            <div class="photo-grid__item" style="background-image: url('<%= require("../../img/what-we-do-1.png") %>')">
+                <span class="photo-grid__title text text_type_title">Product Photography</span>
+                <p class="photo-grid__description">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                <button class="photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Read more</button>
+            </div>
+            <div class="photo-grid__item" style="background-image: url('<%= require("../../img/what-we-do-2.png") %>')">
+                <span class="photo-grid__title text text_type_title">Architecture Photography</span>
+                <p class="photo-grid__description">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                <button class="photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Read more</button>
+            </div>
+            <div class="photo-grid__item" style="background-image: url('<%= require("../../img/what-we-do-3.png") %>')">
+                <span class="photo-grid__title text text_type_title">Drone Photography</span>
+                <p class="photo-grid__description">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                <button class="photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Read more</button>
+            </div>
+            <div class="photo-grid__item" style="background-image: url('<%= require("../../img/what-we-do-4.png") %>')">
+                <span class="photo-grid__title text text_type_title">Wildlife Photography</span>
+                <p class="photo-grid__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                <button class="photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Read more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area panorama" style="--grid-area: locality; background-image: url(<%= require("../../img/banner-2.png") %>">
+        <div class="panorama__container">
+            <span class="panorama__title text text_type_title">Sunset at Mount Fuji</span>
+            <p class="panorama__description">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+        </div>
+        <div class="panorama__icons icons">
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/shutter.svg") %>" alt="Icon">
+                <span class="icons__text">1''</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/aperture.svg") %>" alt="Icon">
+                <span class="icons__text">f/16</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/ios.svg") %>" alt="Icon">
+                <span class="icons__text">400</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/location.svg") %>" alt="Icon">
+                <span class="icons__text">Japan</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area gear-cage bg bg_color_black" style="--grid-area: gear_cage">
+        <div class="gear-cage__container">
+            <span class="gear-cage__title text text_type_title">The Gear cage</span>
+            <h3 class="gear-cage__subtitle">The tools that we use.</h3>
+            <p class="gear-cage__description">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
+            <button class="photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Check it out</button>
+        </div>
+        <div class="gear-cage__banner">
+            <div class="gear-cage__icons icons">
+                <div class="icons__item">
+                    <img class="icons__icon" src="<%= require("../../img/icons/shutter.svg") %>" alt="Icon">
+                    <span class="icons__text">0,8''</span>
+                </div>
+                <div class="icons__item">
+                    <img class="icons__icon" src="<%= require("../../img/icons/aperture.svg") %>" alt="Icon">
+                    <span class="icons__text">f/5,6</span>
+                </div>
+                <div class="icons__item">
+                    <img class="icons__icon" src="<%= require("../../img/icons/ios.svg") %>" alt="Icon">
+                    <span class="icons__text">100</span>
+                </div>
+                <div class="icons__item">
+                    <img class="icons__icon" src="<%= require("../../img/icons/location.svg") %>" alt="Icon">
+                    <span class="icons__text">Sweden</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area panorama" style="--grid-area: monstera_leafs; background-image: url(<%= require("../../img/banner-4.png") %>">
+        <div class="panorama__container">
+            <span class="panorama__title text text_type_title">Monstera Leafs</span>
+            <p class="panorama__description">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+        </div>
+        <div class="panorama__icons icons">
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/shutter.svg") %>" alt="Icon">
+                <span class="icons__text">1/400s</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/aperture.svg") %>" alt="Icon">
+                <span class="icons__text">f/3,5</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/ios.svg") %>" alt="Icon">
+                <span class="icons__text">100</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/location.svg") %>" alt="Icon">
+                <span class="icons__text">Costa Rica</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area blackboard bg bg_color_black" style="--grid-area: past_clients">
+        <h4 class="blackboard__title">Past clients</h4>
+        <p class="blackboard__subtitle">Trusted by your favourite companies</p>
+        <div class="blackboard__gallery">
+            <img src="<%= require("../../img/labels/hill-hayes.png") %>" alt="Gallery">
+            <img src="<%= require("../../img/labels/riksgransen.png") %>" alt="Gallery">
+            <img src="<%= require("../../img/labels/studio-cai.png") %>" alt="Gallery">
+            <img src="<%= require("../../img/labels/chill-industries.png") %>" alt="Gallery">
+            <img src="<%= require("../../img/labels/stockholm.png") %>" alt="Gallery">
+        </div>
+    </div>
+
+    <div class="grid__area panorama" style="--grid-area: star_fall; background-image: url(<%= require("../../img/banner-5.png") %>">
+        <div class="panorama__container">
+            <span class="panorama__title text text_type_title">Star fall in the Himalayas</span>
+            <p class="panorama__description">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+        </div>
+        <div class="panorama__icons icons">
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/shutter.svg") %>" alt="Icon">
+                <span class="icons__text">6''</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/aperture.svg") %>" alt="Icon">
+                <span class="icons__text">f/11</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/ios.svg") %>" alt="Icon">
+                <span class="icons__text">800</span>
+            </div>
+            <div class="icons__item">
+                <img class="icons__icon" src="<%= require("../../img/icons/location.svg") %>" alt="Icon">
+                <span class="icons__text">Nepal</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__area blackboard bg bg_color_black" style="--grid-area: need_help">
+        <h4 class="blackboard__title">Need help with photography or videography?</h4>
+        <p class="blackboard__subtitle">We're here for you!</p>
+        <button class="blackboard__btn photo-grid__btn btn btn_type_with-circle btn_color_white btn_round_x2">Get in touch</button>
+    </div>
+
+    <%= _.template(require('./../inc/footer.html').default)() %>
+</body>
+</html>

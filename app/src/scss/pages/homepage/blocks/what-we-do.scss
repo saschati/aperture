@@ -1,0 +1,23 @@
+.what-we-do {
+  padding: 113px 136px 100px 135px;
+
+  &__title {
+    margin-bottom: 15px;
+
+    line-height: calc(var(--line-height) + 22px);
+    font-size: var(--text-size-lg);
+  }
+
+  &__description {
+    margin-bottom: 42px;
+
+    color: var(--color-gay);
+    font-size: var(--text-size-nm);
+    line-height: calc(var(--line-height) + 10px);
+  }
+
+  &__description,
+  &__title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 576px);
+  grid-auto-rows: 600px;
+  grid-gap: 16px;
+
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    padding-left: 30px;
+    padding-right: 45px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+    height: 80px;
+
+    color: var(--color-gay);
+    font-size: var(--text-size-sm);
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+  }
+}
